@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+
+        <div class="menu" id="menu">
+            <a id="linkHome" href="i.html">Home</a>
+            <a id="linkDesenvolvimento" href="desen.html">Desenvolvimento</a>
+            <a id="linkSobre" href="sobre.html">Sobre</a>
+            <a id="linkComoJogar" href="comojogar.html">Como Jogar</a>
+        </div>
+
+        <div class="pesquisa">
+
+            <input 
+                type="text" 
+                id="barraPesquisa"
+                placeholder="Pesquisar..."
+            >
+
+            <button onclick="pesquisar()">
+                🔍
+            </button>
+
+        </div>
+    </header>
+
+
+    <div class="container" id="container">
+        <div class="card" onclick="abrirCard1('Missão')">Missão</div>
+        <div class="card" onclick="abrirCard2('Visão')">Visão</div>
+        <div class="card" onclick="abrirCard3('Valores')">Valores</div>
+    </div>
+
+        <div class="modal1" id="modal1" onclick="fecharCard1(event)">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharCard1(event)">&times;</span>
+            <h2 id="titulo1"></h2>
+            <p>incentivar o comércio de rua em londrina, focando nos jovens, fazendo com que eles descubram mais lojas e assim aumentando o lucro gerado pelo comércio.</p>
+        </div>
+    </div>
+
+    <div class="modal2" id="modal2" onclick="fecharCard2(event)">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharCard2(event)">&times;</span>
+            <h2 id="titulo2">Visão</h2>
+            <p>Visamos alcançar lucro o suficiente para fazer parcerias e expandir o nosso produto ao redor do país e talvez do mundo, até o ponto em que ele estabilize e gere lucro de forma estável.</p>
+        </div>
+    </div>
+    <div class="modal3" id="modal3" onclick="fecharCard3(event)">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharCard3(event)">&times;</span>
+            <h2 id="titulo3">Valores</h2>
+            <p>Nós acreditamos que com os métodos convencionais seria muito difícil fazer com que os jovens explorem a cidade por conta própria, assim desenvolvemos um app que une as carências do comércio com nosso ideal de espalhar diversão.</p>
+        </div>
+    </div>
+
+
+
+    <h1>
+        A ideia surgiu devido às experiências passadas que tivemos com o Idheaton.<br>
+        Um membro do grupo estava pensando em como unir os interesses dos jovens de forma agradável e utilizando um tema que todo o grupo gostava, a partir disso nós utilizamos o jogo Pokemon go como referência, partindo dele pensamos em comopartindo dele pensamos em como transformar essa ideia em algo mais amplo do que apenas um jogo de captura de criaturas. A proposta evoluiu para a criação de uma plataforma que incentivasse os jovens a explorarem o mundo real enquanto aprendiam, se conectavam e participavam de atividades interativas.<br>
+
+        A partir dessa reflexão, percebemos que poderíamos unir tecnologia, gamificação e educação em um único projeto. Assim, surgiu a ideia de uma empresa focada no desenvolvimento de experiências digitais baseadas em realidade aumentada, onde os usuários são estimulados a realizar tarefas no mundo real para ganhar recompensas dentro do aplicativo.<br>
+
+        Dessa forma, não seria apenas um jogo, mas uma ferramenta que promove interação social, movimento e aprendizado de maneira divertida. Com isso, nosso objetivo se tornou criar soluções inovadoras que aproximem os jovens da tecnologia de forma positiva, utilizando elementos de jogos conhecidos como o Pokémon GO como inspiração, mas com uma proposta mais educativa e social.<br>
+    </h1>
+
+    <div class="container1" id="container1">  
+        <button id="toggleBtn" class="main-btn">
+            ⚙️
+        </button>
+
+        
+        <div id="menu3" class="menu3 hidden">
+            <button id="lightModeBtn">Light Mode</button>
+            <button id="darkModeBtn">Dark Mode</button>
+            <button id="us">Inglês</button>
+            <button id="pt">Português</button>
+            <button id="es">Español</button>
+            <button id="jp">日本語</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <p id="footerTexto">© 2026 Grafitar. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+<script src="jsSobre.js"></script>
+</html>

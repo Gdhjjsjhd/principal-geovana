@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafitar - Eventos</title>
+  <link rel="stylesheet" href="eventos.css">
+</head>
+
+<body>
+
+<header>
+        <a href="index.html">
+            <img src="./imagens/logo.png" alt="Logo Grafitar" id="logo">
+        </a>
+        <h1 id="oi">Grafitar</h1>
+
+        <nav>
+            <a href="noticias.html" id="linkNoticias">Notícias</a>
+            <a href="eventos.html" id="linkEventos">Eventos</a>
+            <a href="desen.html" id="linkSobre">Sobre Nós</a>
+            <a href="loja.html" id="linkLoja">Loja</a>
+            <a href="comunidade.html" id="linkComunidade">Comunidade</a>
+            <a href="comojogar.html" id="linkComoJogar">Como Jogar</a>
+            <a href="entrar.html" id="linkEntrar">Entrar</a>
+        </nav>
+</header>
+
+<main class="page-content">
+  <div class="container">
+
+    <div class="tabs">
+      <div class="tab" data-filtro="todos">Todos</div>
+      <div class="tab" data-filtro="ativos">Ativos</div>
+      <div class="tab" data-filtro="breve">Em breve</div>
+      <div class="tab" data-filtro="finalizados">Finalizados</div>
+    </div>
+
+    <div class="eventos">
+
+      <div class="card ativo">
+        <span class="status ativo">ATIVO</span>
+        <h3>Caçada Cultural</h3>
+        <p>Explore pontos históricos e ganhe moedas especiais durante o evento.</p>
+        <button>Participar</button>
+      </div>
+
+      <div class="card ativo">
+        <span class="status ativo">ATIVO</span>
+        <h3>Grafite Urbano</h3>
+        <p>Crie artes pelo mapa e desbloqueie skins exclusivas.</p>
+        <button>Participar</button>
+      </div>
+
+      <div class="card breve">
+        <span class="status breve">EM BREVE</span>
+        <h3>Desafio Noturno</h3>
+        <p>Eventos especiais durante a noite com recompensas raras.</p>
+        <button disabled>Em breve</button>
+      </div>
+
+      <div class="card finalizado">
+        <span class="status finalizado">FINALIZADO</span>
+        <h3>Primeira Exposição</h3>
+        <p>Evento inicial do Grafitar com artes da comunidade.</p>
+        <button>Ver resultado</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container1" id="container1">  
+      <button id="toggleBtn" class="main-btn">
+          ⚙️
+      </button>
+
+      <div id="menu3" class="menu3 hidden">
+          <button id="lightModeBtn">Light Mode</button>
+          <button id="darkModeBtn">Dark Mode</button>
+          <button id="us">Inglês</button>
+          <button id="pt">Português</button>
+          <button id="es">Español</button>
+          <button id="jp">日本語</button>
+      </div>
+  </div>
+</main>
+
+<footer>
+  <p id="footerTexto">
+      © 2026 Grafitar. Todos os direitos reservados.
+  </p>
+</footer>
+
+</body>
+<script src="eventos.js"></script>
+</html>

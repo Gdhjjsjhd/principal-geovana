@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Grafitar</title>
+    <link rel="stylesheet" href="noticias.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="./imagens/logo.png" alt="Logo Grafitar" id="logo">
+            </a>
+        </div>
+
+        <nav>
+            <a href="noticias.html" id="linkNoticias">Notícias</a>
+            <a href="eventos.html" id="linkEventos">Eventos</a>
+            <a href="desen.html" id="linkSobre">Sobre Nós</a>
+            <a href="loja.html" id="linkLoja">Loja</a>
+            <a href="comunidade.html" id="linkComunidade">Comunidade</a>
+            <a href="comojogar.html" id="linkComoJogar">Como Jogar</a>
+            <a href="entrar.html" id="linkEntrar">Entrar</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="titulo">
+            <h1 id="noticiasPrincipalTitulo">NOTÍCIAS</h1>
+            <p id="noticiasPrincipalSubtitulo">Fique por dentro de tudo que acontece no Grafitar.</p>
+        </section>
+
+        <section class="destaque">
+
+            <img src="./imagens/noticia-destaque.jpg" alt="Notícia Destaque">
+
+            <div class="texto-destaque">
+                <span id="destaqueTag">NOVIDADE</span>
+
+                <h2 id="destaceTitulo">
+                    Novo Grafite Histórico Chega ao Centro de Londrina
+                </h2>
+
+                <p id="destaqueTexto">
+                    Um novo ponto artístico foi adicionado ao mapa.
+                    Os jogadores poderão visitá-lo para ganhar
+                    recompensas exclusivas.
+                </p>
+
+                <button id="destaqueBotao">Ler Mais</button>
+            </div>
+
+        </section>
+
+        <section class="noticias">
+
+            <article class="card">
+
+                <img src="./imagens/img1.jpg" alt="">
+
+                <div class="conteudo">
+
+                    <span id="card1Tag">EVENTO</span>
+
+                    <h3 id="card1Titulo">Caçada Cultural Confirmada</h3>
+
+                    <p id="card1Texto">
+                        Explore pontos históricos e ganhe moedas
+                        especiais durante o evento.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="./imagens/img2.jpg" alt="">
+
+                <div class="conteudo">
+
+                    <span id="card2Tag">ATUALIZAÇÃO</span>
+
+                    <h3 id="card2Titulo">Nova Loja Disponível</h3>
+
+                    <p id="card2Texto">
+                        Agora é possível comprar novas roupas
+                        e acessórios para seu personagem.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="./imagens/img3.jpg" alt="">
+
+                <div class="conteudo">
+
+                    <span id="card3Tag">COMUNIDADE</span>
+
+                    <h3 id="card3Titulo">Artista Local Participa do Projeto</h3>
+
+                    <p id="card3Texto">
+                        Conheça o novo parceiro responsável
+                        pelos grafites da região norte.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="./imagens/img4.jpg" alt="">
+
+                <div class="conteudo">
+
+                    <span id="card4Tag">RECOMPENSAS</span>
+
+                    <h3 id="card4Titulo">Novos Itens Exclusivos</h3>
+
+                    <p id="card4Texto">
+                        Complete missões especiais para desbloquear
+                        itens raros.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <div class="container1" id="container1">  
+        <button id="toggleBtn" class="main-btn">
+            ⚙️
+        </button>
+
+        
+        <div id="menu3" class="menu3 hidden">
+            <button id="lightModeBtn">Light Mode</button>
+            <button id="darkModeBtn">Dark Mode</button>
+            <button id="us">Inglês</button>
+            <button id="pt">Português</button>
+            <button id="es">Español</button>
+            <button id="jp">日本語</button>
+        </div>
+    </div>
+
+    <footer>
+
+        <p id="footerTexto">
+            © 2026 Grafitar - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+    <script src="noticias.js"></script>
+</html>
